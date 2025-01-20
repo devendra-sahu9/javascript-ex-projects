@@ -1,0 +1,10 @@
+.bag{
+    background-color: rgb(146, 234, 146);
+    border: none;
+    border-radius: 5px;
+}
+.wishlist{
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+}
