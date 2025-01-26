@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metro Ticket</title>
+</head>
+<body>
+    <!-- Give discount based on age, gender for metro ticket
+     - Female get 50% off
+     - kids under 5 years of age are free
+     - Kids up to 8 years have half ticket
+     - people over 65 years of age only pay 30% of the ticket 
+     - In case of multiple discounts max discount will apply. -->
+    <script>
+        // let age ;
+        // let gender;
+        // let finalDiscount;
+
+        
+    </script>
+
+    <div>
+        <h1>Metro Ticket</h1>
+        <p>Give discount based</p>
+    </div>
+    <div>
+        <label for="age">Enter your age</label>
+        <input type="number" id="age"> <br> <br>
+        <label for="gender">Enter your gender</label>
+        <input type="text" id="gender">
+    </div>
+    <div>
+        <button onclick="
+         let age ;
+        let gender;
+        let finalDiscount;
+
+
+         age = document.getElementById('age').value;
+         gender = document.getElementById('gender').value; 
+         
+         if(age <= 5){
+            finalDiscount = 100 + '%';
+        }else if(gender === 'female' || age <= 8){
+            finalDiscount = 50 + '%';
+        }else if (age >= 65){
+            finalDiscount = 70 + '%';
+        }else{
+            finalDiscount = 0 + '%';
+        }
+        //alert(`You have got ${finalDiscount} discount`);
+        document.getElementById('printPrice').innerHTML = `You have got ${finalDiscount} discount`;
+         "> submit </button>
+
+    </div>
+    <div id="printPrice"></div>
+</body>
+</html>
